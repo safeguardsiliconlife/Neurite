@@ -6,10 +6,10 @@ const { stringify } = require('querystring');
 const app = express();
 
 const corsOptions = {
-    origin: ['https://neurite.network', 'http://localhost:8080'],
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-    optionsSuccessStatus: 204
+  origin: ['http://localhost:8080'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
 };
 
 app.use(cors(corsOptions));
@@ -118,20 +118,20 @@ async function getWikipediaLinks(keyword, n = 20, srwhat = null, srsort = 'relev
 }
 
 async function getWikipediaCategories(title, keyword, topNCategories = 5) {
-    const categoriesUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=categories&format=json&cllimit=10&titles=${title}`;
-    const response = await axios.get(categoriesUrl);
-    const data = response.data;
-    const page = Object.values(data.query.pages)[0];
-    const categories = page.categories || [];
-    const filteredCategories = categories
-        .map((category) => category.title)
-        .filter((category) => !isIrrelevantCategory(category));
-    const mostSimilarCategories = filterCategoriesBySimilarity(
-        filteredCategories,
-        keyword,
-        topNCategories
-    );
-    return mostSimilarCategories;
+  const categoriesUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=categories&format=json&cllimit=10&titles=${title}`;
+  const response = await axios.get(categoriesUrl);
+  const data = response.data;
+  const page = Object.values(data.query.pages)[0];
+  const categories = page.categories || [];
+  const filteredCategories = categories
+    .map((category) => category.title)
+    .filter((category) => !isIrrelevantCategory(category));
+  const mostSimilarCategories = filterCategoriesBySimilarity(
+    filteredCategories,
+    keyword,
+    topNCategories
+  );
+  return mostSimilarCategories;
 }
 
 async function getWikipediaSummary(title, exsentences = 3) {
