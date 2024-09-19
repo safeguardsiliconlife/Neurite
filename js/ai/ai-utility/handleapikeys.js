@@ -237,7 +237,7 @@ let ollamaLibrary = null;
 async function checkProxyServer() {
   try {
     const response = await fetch('http://localhost:7070/check');
-    if (response.ok) {
+    if (response.ok && false) {
       useProxy = true;
       console.log('AI proxy server is working');
     } else {
