@@ -68,12 +68,14 @@ function handleConnectOrRemove(node, originNode) {
 
   if (existingEdge) {
     if (node.isTextNode && originNode.isTextNode) {
+      console.log("handleConnectOrRemove removeEdgeFromAllInstances")
       removeEdgeFromAllInstances(node.getTitle(), originNode.getTitle());
     } else {
       existingEdge.remove();
     }
     return false; // Indicates the connection was removed
   } else {
+    console.log("handleConnectOrRemove connectNode")
     connectNodes(node, originNode);
     return true; // Indicates a connection was added
   }

@@ -92,6 +92,7 @@ var flashlight_fraction = 0.73; // this is what fraction of samples are diverted
 
 
 
+const OLLAMA_BASE_URL = 'http://127.0.0.1:3001';
 
 
 

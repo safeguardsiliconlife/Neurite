@@ -38,11 +38,12 @@ function connectNodes(node1, node2, connectionType = null, connectionMetadata = 
   if (node1 !== node2 && node1.isTextNode && node2.isTextNode) {
     const title1 = node1.getTitle();
     const title2 = node2.getTitle();
-
+    console.log("connectNodes addEdgeToZettelkasten")
     addEdgeToZettelkasten(title1, title2);
     addEdgeToZettelkasten(title2, title1);
   } else if (node1 !== node2) {
     let linkStrength = node1.pos.minus(node2.pos).mag() / 2;
+    console.log("#connecctNodes connectDistance")
     connectDistance(node1, node2, linkStrength, connectionType, connectionMetadata);
   }
 }

@@ -514,6 +514,7 @@ class ZettelkastenProcessor {
     references.forEach(reference => {
       const refUUID = allNodes[reference]?.nodeObject?.uuid;
       if (refUUID && !currentEdges.has(refUUID)) {
+        console.log("#handleRegs connectDistance");
         const newEdge = connectDistance(thisNode, allNodes[reference].nodeObject, null, null, 'note2note');
         thisNode.edges.push(newEdge);
         currentEdges.set(refUUID, newEdge);

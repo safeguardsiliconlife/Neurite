@@ -437,6 +437,7 @@ function addEdgeToZettelkasten(title, linkedTitle) {
 
   if (nodeInfo) {
     const { parser, cmInstance } = nodeInfo;
+    console.log("parser.addEdge", "parser.addEdge", "parser.addEdge", title, linkedTitle)
     parser.addEdge(title, linkedTitle, cmInstance);
   }
 }

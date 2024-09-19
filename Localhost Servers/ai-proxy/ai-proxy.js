@@ -5,6 +5,7 @@ const cors = require('cors');
 const cheerio = require('cheerio');
 const bodyParser = require('body-parser');
 const app = express();
+
 const PORT = process.env.PORT || 7070;
 
 // Initialize API keys
@@ -227,7 +228,7 @@ app.post('/groq', async (req, res) => {
 });
 
 app.post('/ollama/chat', async (req, res) => {
-  await handleApiRequest(req, res, 'http://127.0.0.1:11434/api/chat', null, 'ollama', { context: "" });
+  await handleApiRequest(req, res, OLLAMA_BASE_URL + '/api/chat', null, 'ollama', { context: "" });
 });
 
 app.post('/custom', async (req, res) => {
@@ -238,7 +239,7 @@ app.post('/custom', async (req, res) => {
 
 app.get('/ollama/tags', async (req, res) => {
   try {
-    const response = await axios.get('http://127.0.0.1:11434/api/tags');
+    const response = await axios.get(OLLAMA_BASE_URL + '/api/tags');
     res.json(response.data);
   } catch (error) {
     console.error('Error fetching Ollama tags:', error);
@@ -270,7 +271,7 @@ app.get('/ollama/library', async (req, res) => {
 app.post('/ollama/embeddings', async (req, res) => {
   const { model, prompt, options, keep_alive } = req.body;
   try {
-    const response = await axios.post('http://127.0.0.1:11434/api/embeddings', {
+    const response = await axios.post(OLLAMA_BASE_URL + '/api/embeddings', {
       model,
       prompt,
       options,
@@ -286,7 +287,7 @@ app.post('/ollama/embeddings', async (req, res) => {
 app.post('/ollama/pull', async (req, res) => {
   const { name, insecure, stream } = req.body;
   try {
-    const response = await axios.post('http://127.0.0.1:11434/api/pull', {
+    const response = await axios.post(OLLAMA_BASE_URL + '/api/pull', {
       name,
       insecure,
       stream
@@ -315,7 +316,7 @@ app.post('/ollama/pull', async (req, res) => {
 app.delete('/ollama/delete', async (req, res) => {
   const { name } = req.body;
   try {
-    const response = await axios.delete('http://127.0.0.1:11434/api/delete', {
+    const response = await axios.delete(OLLAMA_BASE_URL + '/api/delete', {
       data: { name }
     });
     res.json(response.data);
@@ -328,7 +329,7 @@ app.delete('/ollama/delete', async (req, res) => {
 app.post('/ollama/create', async (req, res) => {
   const { name, modelfile, stream, path } = req.body;
   try {
-    const response = await axios.post('http://127.0.0.1:11434/api/create', {
+    const response = await axios.post(OLLAMA_BASE_URL + '/api/create', {
       name,
       modelfile,
       stream,
@@ -344,7 +345,7 @@ app.post('/ollama/create', async (req, res) => {
 app.post('/ollama/show', async (req, res) => {
   const { name } = req.body;
   try {
-    const response = await axios.post('http://127.0.0.1:11434/api/show', {
+    const response = await axios.post(OLLAMA_BASE_URL + '/api/show', {
       name
     });
     res.json(response.data);
@@ -358,7 +359,7 @@ app.post('/ollama/show', async (req, res) => {
 app.head('/ollama/blobs/:digest', async (req, res) => {
   const { digest } = req.params;
   try {
-    const response = await axios.head(`http://127.0.0.1:11434/api/blobs/${digest}`);
+    const response = await axios.head(OLLAMA_BASE_URL + `/api/blobs/${digest}`);
     res.status(response.status).end();
   } catch (error) {
     console.error('Error checking blob:', error);
@@ -370,7 +371,7 @@ app.head('/ollama/blobs/:digest', async (req, res) => {
 app.post('/ollama/blobs/:digest', async (req, res) => {
   const { digest } = req.params;
   try {
-    const response = await axios.post(`http://127.0.0.1:11434/api/blobs/${digest}`, req.body, {
+    const response = await axios.post(OLLAMA_BASE_URL + `/api/blobs/${digest}`, req.body, {
       headers: {
         'Content-Type': 'application/json'
       }
@@ -385,7 +386,7 @@ app.post('/ollama/blobs/:digest', async (req, res) => {
 app.post('/ollama/push', async (req, res) => {
   const { name, insecure, stream } = req.body;
   try {
-    const response = await axios.post('http://127.0.0.1:11434/api/push', {
+    const response = await axios.post(OLLAMA_BASE_URL + '/api/push', {
       name,
       insecure,
       stream

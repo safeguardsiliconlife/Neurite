@@ -54,8 +54,8 @@ function createRettamNodesFromResponse(rettamNodeObject, originNode) {
       if (!hasBeenCreated[content]) {
         hasBeenCreated[content] = true;
 
-        const x = originNode.pos.x + (Math.random() - 0.5) * 0.5;
-        const y = originNode.pos.y + (Math.random() - 0.5) * 0.5;
+        const x = originNode.pos.x + (Math.random() - 0.5) * 2;
+        const y = originNode.pos.y + (Math.random() - 0.5) * 2;
         const rettamNode = createRettamNode(title, content, x, y, originNode.scale * 0.8, entity);
 
         rettamNode.draw();
