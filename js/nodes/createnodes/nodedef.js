@@ -16,6 +16,10 @@
     if (isEditorNode(node)) {
         initEditorNode(node)
     }
+
+    if (node.isRettam) {
+        initRettamNode(node);
+    }    
 }
 
 */

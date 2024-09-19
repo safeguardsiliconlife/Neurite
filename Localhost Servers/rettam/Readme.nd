@@ -1,0 +1,8 @@
+
+
+
+
+
+# Dev
+### restart server on change
+watchmedo auto-restart --patterns="*.py" --recursive -- python server.py

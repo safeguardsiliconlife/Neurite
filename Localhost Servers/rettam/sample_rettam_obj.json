@@ -1,0 +1,1101 @@
+{
+  "dependencies": [
+    {
+      "relation": "prep",
+      "source": "is",
+      "target": "With"
+    },
+    {
+      "relation": "det",
+      "source": "Pro",
+      "target": "the"
+    },
+    {
+      "relation": "compound",
+      "source": "Pro",
+      "target": "iPhone"
+    },
+    {
+      "relation": "nummod",
+      "source": "Pro",
+      "target": "16"
+    },
+    {
+      "relation": "pobj",
+      "source": "With",
+      "target": "Pro"
+    },
+    {
+      "relation": "punct",
+      "source": "is",
+      "target": ","
+    },
+    {
+      "relation": "det",
+      "source": "focus",
+      "target": "the"
+    },
+    {
+      "relation": "nsubj",
+      "source": "is",
+      "target": "focus"
+    },
+    {
+      "relation": "prep",
+      "source": "is",
+      "target": "on"
+    },
+    {
+      "relation": "pobj",
+      "source": "on",
+      "target": "cameras"
+    },
+    {
+      "relation": "cc",
+      "source": "cameras",
+      "target": "and"
+    },
+    {
+      "relation": "compound",
+      "source": "Intelligence",
+      "target": "Apple"
+    },
+    {
+      "relation": "conj",
+      "source": "cameras",
+      "target": "Intelligence"
+    },
+    {
+      "relation": "punct",
+      "source": "is",
+      "target": "."
+    },
+    {
+      "relation": "det",
+      "source": "problem",
+      "target": "The"
+    },
+    {
+      "relation": "nsubj",
+      "source": "is",
+      "target": "problem"
+    },
+    {
+      "relation": "punct",
+      "source": "is",
+      "target": ","
+    },
+    {
+      "relation": "compound",
+      "source": "Intelligence",
+      "target": "Apple"
+    },
+    {
+      "relation": "nsubj",
+      "source": "is",
+      "target": "Intelligence"
+    },
+    {
+      "relation": "ccomp",
+      "source": "is",
+      "target": "is"
+    },
+    {
+      "relation": "neg",
+      "source": "is",
+      "target": "n't"
+    },
+    {
+      "relation": "advmod",
+      "source": "is",
+      "target": "quite"
+    },
+    {
+      "relation": "advmod",
+      "source": "is",
+      "target": "here"
+    },
+    {
+      "relation": "advmod",
+      "source": "is",
+      "target": "yet"
+    },
+    {
+      "relation": "punct",
+      "source": "is",
+      "target": "."
+    },
+    {
+      "relation": "nsubj",
+      "source": "test",
+      "target": "We"
+    },
+    {
+      "relation": "aux",
+      "source": "test",
+      "target": "can"
+    },
+    {
+      "relation": "det",
+      "source": "features",
+      "target": "some"
+    },
+    {
+      "relation": "dobj",
+      "source": "test",
+      "target": "features"
+    },
+    {
+      "relation": "prep",
+      "source": "test",
+      "target": "in"
+    },
+    {
+      "relation": "det",
+      "source": "beta",
+      "target": "the"
+    },
+    {
+      "relation": "compound",
+      "source": "beta",
+      "target": "developer"
+    },
+    {
+      "relation": "pobj",
+      "source": "in",
+      "target": "beta"
+    },
+    {
+      "relation": "nsubj",
+      "source": "'s",
+      "target": "that"
+    },
+    {
+      "relation": "relcl",
+      "source": "beta",
+      "target": "'s"
+    },
+    {
+      "relation": "advmod",
+      "source": "available",
+      "target": "currently"
+    },
+    {
+      "relation": "acomp",
+      "source": "'s",
+      "target": "available"
+    },
+    {
+      "relation": "punct",
+      "source": "test",
+      "target": ","
+    },
+    {
+      "relation": "cc",
+      "source": "test",
+      "target": "but"
+    },
+    {
+      "relation": "nsubj",
+      "source": "'s",
+      "target": "that"
+    },
+    {
+      "relation": "conj",
+      "source": "test",
+      "target": "'s"
+    },
+    {
+      "relation": "neg",
+      "source": "'s",
+      "target": "not"
+    },
+    {
+      "relation": "advmod",
+      "source": "'s",
+      "target": "necessarily"
+    },
+    {
+      "relation": "det",
+      "source": "same",
+      "target": "the"
+    },
+    {
+      "relation": "attr",
+      "source": "'s",
+      "target": "same"
+    },
+    {
+      "relation": "prep",
+      "source": "same",
+      "target": "as"
+    },
+    {
+      "relation": "det",
+      "source": "experience",
+      "target": "the"
+    },
+    {
+      "relation": "pobj",
+      "source": "as",
+      "target": "experience"
+    },
+    {
+      "relation": "det",
+      "source": "public",
+      "target": "the"
+    },
+    {
+      "relation": "nsubj",
+      "source": "get",
+      "target": "public"
+    },
+    {
+      "relation": "aux",
+      "source": "get",
+      "target": "will"
+    },
+    {
+      "relation": "relcl",
+      "source": "experience",
+      "target": "get"
+    },
+    {
+      "relation": "advmod",
+      "source": "rolls",
+      "target": "when"
+    },
+    {
+      "relation": "det",
+      "source": "update",
+      "target": "the"
+    },
+    {
+      "relation": "nsubj",
+      "source": "rolls",
+      "target": "update"
+    },
+    {
+      "relation": "advcl",
+      "source": "get",
+      "target": "rolls"
+    },
+    {
+      "relation": "prt",
+      "source": "rolls",
+      "target": "out"
+    },
+    {
+      "relation": "prep",
+      "source": "rolls",
+      "target": "in"
+    },
+    {
+      "relation": "pobj",
+      "source": "in",
+      "target": "October"
+    },
+    {
+      "relation": "punct",
+      "source": "'s",
+      "target": "."
+    },
+    {
+      "relation": "nsubj",
+      "source": "’s",
+      "target": "It"
+    },
+    {
+      "relation": "neg",
+      "source": "’s",
+      "target": "not"
+    },
+    {
+      "relation": "acomp",
+      "source": "’s",
+      "target": "unprecedented"
+    },
+    {
+      "relation": "mark",
+      "source": "launch",
+      "target": "for"
+    },
+    {
+      "relation": "amod",
+      "source": "iPhones",
+      "target": "new"
+    },
+    {
+      "relation": "nsubj",
+      "source": "launch",
+      "target": "iPhones"
+    },
+    {
+      "relation": "aux",
+      "source": "launch",
+      "target": "to"
+    },
+    {
+      "relation": "advcl",
+      "source": "’s",
+      "target": "launch"
+    },
+    {
+      "relation": "prep",
+      "source": "launch",
+      "target": "without"
+    },
+    {
+      "relation": "det",
+      "source": "features",
+      "target": "some"
+    },
+    {
+      "relation": "amod",
+      "source": "features",
+      "target": "marquee"
+    },
+    {
+      "relation": "pobj",
+      "source": "without",
+      "target": "features"
+    },
+    {
+      "relation": "punct",
+      "source": "’s",
+      "target": ","
+    },
+    {
+      "relation": "advmod",
+      "source": "’s",
+      "target": "sure"
+    },
+    {
+      "relation": "punct",
+      "source": "’s",
+      "target": ","
+    },
+    {
+      "relation": "cc",
+      "source": "’s",
+      "target": "and"
+    },
+    {
+      "relation": "advmod",
+      "source": "'s",
+      "target": "thankfully"
+    },
+    {
+      "relation": "expl",
+      "source": "'s",
+      "target": "there"
+    },
+    {
+      "relation": "conj",
+      "source": "’s",
+      "target": "'s"
+    },
+    {
+      "relation": "advmod",
+      "source": "'s",
+      "target": "still"
+    },
+    {
+      "relation": "attr",
+      "source": "'s",
+      "target": "plenty"
+    },
+    {
+      "relation": "dobj",
+      "source": "brings",
+      "target": "that"
+    },
+    {
+      "relation": "det",
+      "source": "Pro",
+      "target": "the"
+    },
+    {
+      "relation": "compound",
+      "source": "Pro",
+      "target": "iPhone"
+    },
+    {
+      "relation": "compound",
+      "source": "Pro",
+      "target": "16"
+    },
+    {
+      "relation": "nsubj",
+      "source": "brings",
+      "target": "Pro"
+    },
+    {
+      "relation": "relcl",
+      "source": "plenty",
+      "target": "brings"
+    },
+    {
+      "relation": "punct",
+      "source": "'s",
+      "target": "."
+    },
+    {
+      "relation": "prep",
+      "source": "are",
+      "target": "From"
+    },
+    {
+      "relation": "compound",
+      "source": "Control",
+      "target": "Camera"
+    },
+    {
+      "relation": "pobj",
+      "source": "From",
+      "target": "Control"
+    },
+    {
+      "relation": "punct",
+      "source": "Control",
+      "target": ","
+    },
+    {
+      "relation": "det",
+      "source": "Camera",
+      "target": "the"
+    },
+    {
+      "relation": "compound",
+      "source": "Camera",
+      "target": "Fusion"
+    },
+    {
+      "relation": "conj",
+      "source": "Control",
+      "target": "Camera"
+    },
+    {
+      "relation": "cc",
+      "source": "Camera",
+      "target": "and"
+    },
+    {
+      "relation": "amod",
+      "source": "updates",
+      "target": "other"
+    },
+    {
+      "relation": "npadvmod",
+      "source": "related",
+      "target": "video"
+    },
+    {
+      "relation": "punct",
+      "source": "related",
+      "target": "-"
+    },
+    {
+      "relation": "amod",
+      "source": "updates",
+      "target": "related"
+    },
+    {
+      "relation": "conj",
+      "source": "Camera",
+      "target": "updates"
+    },
+    {
+      "relation": "prep",
+      "source": "updates",
+      "target": "to"
+    },
+    {
+      "relation": "advmod",
+      "source": "bigger",
+      "target": "slightly"
+    },
+    {
+      "relation": "amod",
+      "source": "displays",
+      "target": "bigger"
+    },
+    {
+      "relation": "pobj",
+      "source": "to",
+      "target": "displays"
+    },
+    {
+      "relation": "cc",
+      "source": "displays",
+      "target": "and"
+    },
+    {
+      "relation": "conj",
+      "source": "displays",
+      "target": "iOS"
+    },
+    {
+      "relation": "nummod",
+      "source": "iOS",
+      "target": "18"
+    },
+    {
+      "relation": "punct",
+      "source": "From",
+      "target": ","
+    },
+    {
+      "relation": "det",
+      "source": "Pro",
+      "target": "the"
+    },
+    {
+      "relation": "compound",
+      "source": "Pro",
+      "target": "iPhone"
+    },
+    {
+      "relation": "nummod",
+      "source": "iPhone",
+      "target": "16"
+    },
+    {
+      "relation": "nsubj",
+      "source": "are",
+      "target": "Pro"
+    },
+    {
+      "relation": "cc",
+      "source": "Pro",
+      "target": "and"
+    },
+    {
+      "relation": "compound",
+      "source": "Max",
+      "target": "Pro"
+    },
+    {
+      "relation": "conj",
+      "source": "Pro",
+      "target": "Max"
+    },
+    {
+      "relation": "amod",
+      "source": "successors",
+      "target": "intriguing"
+    },
+    {
+      "relation": "attr",
+      "source": "are",
+      "target": "successors"
+    },
+    {
+      "relation": "punct",
+      "source": "are",
+      "target": ","
+    },
+    {
+      "relation": "advmod",
+      "source": "absent",
+      "target": "even"
+    },
+    {
+      "relation": "advcl",
+      "source": "are",
+      "target": "absent"
+    },
+    {
+      "relation": "det",
+      "source": "features",
+      "target": "the"
+    },
+    {
+      "relation": "amod",
+      "source": "features",
+      "target": "vaunted"
+    },
+    {
+      "relation": "compound",
+      "source": "features",
+      "target": "Intelligence"
+    },
+    {
+      "relation": "pobj",
+      "source": "absent",
+      "target": "features"
+    },
+    {
+      "relation": "nsubj",
+      "source": "are",
+      "target": "that"
+    },
+    {
+      "relation": "relcl",
+      "source": "features",
+      "target": "are"
+    },
+    {
+      "relation": "advmod",
+      "source": "are",
+      "target": "still"
+    },
+    {
+      "relation": "aux",
+      "source": "come",
+      "target": "to"
+    },
+    {
+      "relation": "xcomp",
+      "source": "are",
+      "target": "come"
+    },
+    {
+      "relation": "punct",
+      "source": "are",
+      "target": "."
+    }
+  ],
+  "entities": [
+    {
+      "end": 22,
+      "label": "PRODUCT",
+      "start": 5,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 57,
+      "label": "ORG",
+      "start": 52,
+      "text": "Apple"
+    },
+    {
+      "end": 106,
+      "label": "ORG",
+      "start": 88,
+      "text": "Apple Intelligence"
+    },
+    {
+      "end": 315,
+      "label": "DATE",
+      "start": 308,
+      "text": "October"
+    },
+    {
+      "end": 355,
+      "label": "ORG",
+      "start": 348,
+      "text": "iPhones"
+    },
+    {
+      "end": 461,
+      "label": "PRODUCT",
+      "start": 444,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 489,
+      "label": "PRODUCT",
+      "start": 475,
+      "text": "Camera Control"
+    },
+    {
+      "end": 508,
+      "label": "PRODUCT",
+      "start": 491,
+      "text": "the Fusion Camera"
+    },
+    {
+      "end": 598,
+      "label": "PRODUCT",
+      "start": 581,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 610,
+      "label": "PRODUCT",
+      "start": 603,
+      "text": "Pro Max"
+    }
+  ],
+  "hf_entities": [
+    {
+      "end": 15,
+      "entity": "I-MISC",
+      "index": 3,
+      "score": 0.9999581575393677,
+      "start": 9,
+      "word": "▁iPhone"
+    },
+    {
+      "end": 18,
+      "entity": "I-MISC",
+      "index": 4,
+      "score": 0.9999465942382812,
+      "start": 16,
+      "word": "▁16"
+    },
+    {
+      "end": 22,
+      "entity": "I-MISC",
+      "index": 5,
+      "score": 0.9999692440032959,
+      "start": 19,
+      "word": "▁Pro"
+    },
+    {
+      "end": 57,
+      "entity": "I-MISC",
+      "index": 14,
+      "score": 0.9995566010475159,
+      "start": 52,
+      "word": "▁Apple"
+    },
+    {
+      "end": 70,
+      "entity": "I-MISC",
+      "index": 15,
+      "score": 0.9998441934585571,
+      "start": 58,
+      "word": "▁Intelligence"
+    },
+    {
+      "end": 93,
+      "entity": "I-MISC",
+      "index": 21,
+      "score": 0.9999432563781738,
+      "start": 88,
+      "word": "▁Apple"
+    },
+    {
+      "end": 106,
+      "entity": "I-MISC",
+      "index": 22,
+      "score": 0.9999734163284302,
+      "start": 94,
+      "word": "▁Intelligence"
+    },
+    {
+      "end": 354,
+      "entity": "I-MISC",
+      "index": 80,
+      "score": 0.999976396560669,
+      "start": 348,
+      "word": "▁iPhone"
+    },
+    {
+      "end": 454,
+      "entity": "I-MISC",
+      "index": 102,
+      "score": 0.9999552965164185,
+      "start": 448,
+      "word": "▁iPhone"
+    },
+    {
+      "end": 457,
+      "entity": "I-MISC",
+      "index": 103,
+      "score": 0.9999446868896484,
+      "start": 455,
+      "word": "▁16"
+    },
+    {
+      "end": 461,
+      "entity": "I-MISC",
+      "index": 104,
+      "score": 0.9999687671661377,
+      "start": 458,
+      "word": "▁Pro"
+    },
+    {
+      "end": 481,
+      "entity": "I-MISC",
+      "index": 109,
+      "score": 0.9984306693077087,
+      "start": 475,
+      "word": "▁Camera"
+    },
+    {
+      "end": 489,
+      "entity": "I-MISC",
+      "index": 110,
+      "score": 0.9995724558830261,
+      "start": 482,
+      "word": "▁Control"
+    },
+    {
+      "end": 501,
+      "entity": "I-MISC",
+      "index": 113,
+      "score": 0.9994649291038513,
+      "start": 495,
+      "word": "▁Fusion"
+    },
+    {
+      "end": 508,
+      "entity": "I-MISC",
+      "index": 114,
+      "score": 0.9998297691345215,
+      "start": 502,
+      "word": "▁Camera"
+    },
+    {
+      "end": 576,
+      "entity": "I-MISC",
+      "index": 127,
+      "score": 0.9991718530654907,
+      "start": 573,
+      "word": "▁iOS"
+    },
+    {
+      "end": 579,
+      "entity": "I-MISC",
+      "index": 128,
+      "score": 0.9988991022109985,
+      "start": 577,
+      "word": "▁18"
+    },
+    {
+      "end": 591,
+      "entity": "I-MISC",
+      "index": 131,
+      "score": 0.999958872795105,
+      "start": 585,
+      "word": "▁iPhone"
+    },
+    {
+      "end": 594,
+      "entity": "I-MISC",
+      "index": 132,
+      "score": 0.9999362230300903,
+      "start": 592,
+      "word": "▁16"
+    },
+    {
+      "end": 598,
+      "entity": "I-MISC",
+      "index": 133,
+      "score": 0.9999407529830933,
+      "start": 595,
+      "word": "▁Pro"
+    },
+    {
+      "end": 606,
+      "entity": "I-MISC",
+      "index": 135,
+      "score": 0.9999194145202637,
+      "start": 603,
+      "word": "▁Pro"
+    },
+    {
+      "end": 610,
+      "entity": "I-MISC",
+      "index": 136,
+      "score": 0.9999197721481323,
+      "start": 607,
+      "word": "▁Max"
+    },
+    {
+      "end": 674,
+      "entity": "I-MISC",
+      "index": 150,
+      "score": 0.9999440908432007,
+      "start": 662,
+      "word": "▁Intelligence"
+    }
+  ],
+  "noun_chunks": [
+    {
+      "end": 22,
+      "root": "Pro",
+      "start": 5,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 33,
+      "root": "focus",
+      "start": 24,
+      "text": "the focus"
+    },
+    {
+      "end": 47,
+      "root": "cameras",
+      "start": 40,
+      "text": "cameras"
+    },
+    {
+      "end": 70,
+      "root": "Intelligence",
+      "start": 52,
+      "text": "Apple Intelligence"
+    },
+    {
+      "end": 83,
+      "root": "problem",
+      "start": 72,
+      "text": "The problem"
+    },
+    {
+      "end": 106,
+      "root": "Intelligence",
+      "start": 88,
+      "text": "Apple Intelligence"
+    },
+    {
+      "end": 131,
+      "root": "We",
+      "start": 129,
+      "text": "We"
+    },
+    {
+      "end": 154,
+      "root": "features",
+      "start": 141,
+      "text": "some features"
+    },
+    {
+      "end": 176,
+      "root": "beta",
+      "start": 158,
+      "text": "the developer beta"
+    },
+    {
+      "end": 181,
+      "root": "that",
+      "start": 177,
+      "text": "that"
+    },
+    {
+      "end": 213,
+      "root": "that",
+      "start": 209,
+      "text": "that"
+    },
+    {
+      "end": 258,
+      "root": "experience",
+      "start": 244,
+      "text": "the experience"
+    },
+    {
+      "end": 269,
+      "root": "public",
+      "start": 259,
+      "text": "the public"
+    },
+    {
+      "end": 294,
+      "root": "update",
+      "start": 284,
+      "text": "the update"
+    },
+    {
+      "end": 315,
+      "root": "October",
+      "start": 308,
+      "text": "October"
+    },
+    {
+      "end": 319,
+      "root": "It",
+      "start": 317,
+      "text": "It"
+    },
+    {
+      "end": 355,
+      "root": "iPhones",
+      "start": 344,
+      "text": "new iPhones"
+    },
+    {
+      "end": 395,
+      "root": "features",
+      "start": 374,
+      "text": "some marquee features"
+    },
+    {
+      "end": 438,
+      "root": "plenty",
+      "start": 432,
+      "text": "plenty"
+    },
+    {
+      "end": 443,
+      "root": "that",
+      "start": 439,
+      "text": "that"
+    },
+    {
+      "end": 461,
+      "root": "Pro",
+      "start": 444,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 489,
+      "root": "Control",
+      "start": 475,
+      "text": "Camera Control"
+    },
+    {
+      "end": 508,
+      "root": "Camera",
+      "start": 491,
+      "text": "the Fusion Camera"
+    },
+    {
+      "end": 540,
+      "root": "updates",
+      "start": 513,
+      "text": "other video-related updates"
+    },
+    {
+      "end": 568,
+      "root": "displays",
+      "start": 544,
+      "text": "slightly bigger displays"
+    },
+    {
+      "end": 576,
+      "root": "iOS",
+      "start": 573,
+      "text": "iOS"
+    },
+    {
+      "end": 598,
+      "root": "Pro",
+      "start": 581,
+      "text": "the iPhone 16 Pro"
+    },
+    {
+      "end": 610,
+      "root": "Max",
+      "start": 603,
+      "text": "Pro Max"
+    },
+    {
+      "end": 636,
+      "root": "successors",
+      "start": 615,
+      "text": "intriguing successors"
+    },
+    {
+      "end": 683,
+      "root": "features",
+      "start": 650,
+      "text": "the vaunted Intelligence features"
+    },
+    {
+      "end": 688,
+      "root": "that",
+      "start": 684,
+      "text": "that"
+    }
+  ],
+  "sentiment": [
+    {
+      "label": "NEGATIVE",
+      "score": 0.9900534749031067
+    }
+  ]
+}
