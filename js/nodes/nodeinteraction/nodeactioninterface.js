@@ -5,7 +5,7 @@ function getNodeType(node) {
     return 'llm';
   } else if (node.isLink) {
     return 'link';
-  } else if (node.isRettam) {
+  } else if (node.isRettamNode) {
     return 'rettam';
   }
   return 'other'; // Default case for undefined node types
@@ -18,7 +18,7 @@ function getNodeActions(node) {
     return new LLMNodeActions(node);
   } else if (node.isLink) {
     return new LinkNodeActions(node);
-  } else if (node.isRettam) {
+  } else if (node.isRettamNode) {
     return new RettamNodeActions(node);
   }
   // Add additional conditions for other node types

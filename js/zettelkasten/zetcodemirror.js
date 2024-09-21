@@ -148,7 +148,11 @@ class ZettelkastenParser {
     this.cm.refresh();
   }
   addEdge(fromTitle, toTitle, cmInstance) {
-    console.log("addEdge")
+    console.log("addEdge called with:", { fromTitle, toTitle });
+    console.log("refTag:", tagValues.refTag);
+    console.log("closingBracket:", bracketsMap[tagValues.refTag]);
+
+    console.log("addEdge ZettelkastenParser")
     if (!fromTitle || !toTitle) {
       console.error("One or both titles are empty or undefined.");
       return;

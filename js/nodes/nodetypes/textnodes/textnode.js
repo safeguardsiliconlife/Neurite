@@ -1,4 +1,6 @@
 function createTextNode(name = '', text = '', sx = undefined, sy = undefined, x = undefined, y = undefined) {
+  console.log("createTextNode")
+  console.trace()
   let n = document.createElement("textarea");
   n.classList.add('custom-scrollbar', 'node-textarea');
   n.onmousedown = cancel;

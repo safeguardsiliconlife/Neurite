@@ -9,3 +9,7 @@ Flask[async]
 flask-cors
 watchdog
 watchmedo
+streamlit
+requests
+networkx
+pyvis

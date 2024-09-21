@@ -115,17 +115,41 @@ class HuggingFaceEntityExtractor():
 class HuggingFaceSentimentExtractor():
     def __init__(self):
         self.sentiment_pipeline = pipeline("sentiment-analysis", device=device)
+        self.tokenizer = self.sentiment_pipeline.tokenizer
+        self.max_length = self.tokenizer.model_max_length
 
     async def extract(self, text):
-        sentiment = self.sentiment_pipeline(text)
+        print("HuggingFaceSentimentExtractor len(text):", len(text))
+        # Split the text into smaller chunks
+        sentences = text.split('. ')
+        chunks = []
+        current_chunk = ''
+        for sentence in sentences:
+            if len(self.tokenizer.tokenize(current_chunk + sentence)) < self.max_length:
+                current_chunk += sentence + '. '
+            else:
+                chunks.append(current_chunk.strip())
+                current_chunk = sentence + '. '
+        if current_chunk:
+            chunks.append(current_chunk.strip())
+
+        print(f'processing {len(chunks)} chunks because max tokenizer length is {self.max_length}')
+
+        sentiments = []
+        for chunk in chunks:
+            sentiment = self.sentiment_pipeline(chunk)
+            sentiments.extend(sentiment)
+
         # Convert np.float32 to float
-        for result in sentiment:
+        for result in sentiments:
             for key, value in result.items():
                 if isinstance(value, np.float32):
                     result[key] = float(value)
+
         return {
-            "sentiment": sentiment
+            "sentiment": sentiments
         }
+
         # return {
         #     "label": sentiment["label"],
         #     "score": sentiment["score"]

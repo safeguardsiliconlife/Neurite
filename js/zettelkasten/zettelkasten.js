@@ -195,6 +195,7 @@ class ZettelkastenProcessor {
   }
 
   handleNode(line, i, nodeLines, nodes, currentNodeTitle) {
+    console.log("handleNode")
     currentNodeTitle = line.substr(nodeTag.length).trim();
 
     if (restoreZettelkastenEvent) {

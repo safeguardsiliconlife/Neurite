@@ -17,7 +17,7 @@
         initEditorNode(node)
     }
 
-    if (node.isRettam) {
+    if (node.isRettamNode) {
         initRettamNode(node);
     }    
 }

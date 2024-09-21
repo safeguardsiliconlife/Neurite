@@ -34,6 +34,8 @@ function connectRandom(n) {
 */
 
 function connectNodes(node1, node2, connectionType = null, connectionMetadata = {}) {
+  console.log("node1", node1?.textarea?.value);
+  console.log("node2", node2?.textarea?.value);
   // Check if the titles are different and ensure the nodes are not the same instance
   if (node1 !== node2 && node1.isTextNode && node2.isTextNode) {
     const title1 = node1.getTitle();
@@ -55,6 +57,8 @@ function connectDistance(na, nb, linkStrength = 0.1, linkStyle, type = 'default'
     fill: "lightcyan",
     opacity: "0.5"
   };
+
+  debugger;
   // Log UUIDs for debugging
   //console.log(`Connecting: ${na.uuid} to ${nb.uuid}`);
 

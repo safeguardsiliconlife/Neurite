@@ -2,7 +2,7 @@ async function generateRettamNodes(originNode) {
   const contextNodes = getContextualNodes(originNode);
   const rettamNodeObject = await getRettamNodes(originNode, contextNodes);
 
-  createRettamNodesFromResponse(rettamNodeObject, originNode);
+  createRettamNodesFromResponse(originNode, rettamNodeObject);
 }
 
 function getContextualNodes(originNode) {
@@ -44,32 +44,36 @@ async function getRettamNodes(originNode, contextNodes) {
 
 
 
-function createRettamNodesFromResponse(rettamNodeObject, originNode) {
+function createRettamNodesFromResponse(originNode, rettamNodeObject) {
   if (rettamNodeObject?.entities?.length) {
     rettamNodeObject.entities.forEach(entity => {
-      let hasBeenCreated = {};
       let { label, text } = entity;
       let content = title = [label, text].join(" ")
+      let existingNode = getNodeByTitle(title);
 
-      if (!hasBeenCreated[content]) {
-        hasBeenCreated[content] = true;
+      if (existingNode) {
+        existingEdge = findExistingEdge(existingNode, originNode);
+        if (!existingEdge) connectNodes(originNode, existingNode);
+      }
+      else {
+        //doesnt exist
+        let createdNode = addNodeTagToZettelkasten(title, content);
 
-        const x = originNode.pos.x + (Math.random() - 0.5) * 2;
-        const y = originNode.pos.y + (Math.random() - 0.5) * 2;
-        const rettamNode = createRettamNode(title, content, x, y, originNode.scale * 0.8, entity);
+        if (createdNode) {
+          createdNode = addRettamProps(createdNode, entity);
+        }
 
-        rettamNode.draw();
-        connectNodes(originNode, rettamNode);
+        connectNodes(originNode, createdNode);
       }
     });
   }
   else console.log("empty entities on rettam obj", rettamNodeObject)
 }
 
-
-function createRettamNode(title, content, x, y, scale, metadata) {
-  const node = createTextNode(title, content, x, y, scale);
-  node.isRettam = true;
+function addRettamProps(node, metadata) {
+  // function addRettamProps(title, content, x, y, scale, metadata) {
+  // const node = createTextNode(title, content, x, y, scale);
+  node.isRettamNode = true;
   node.metadata = {
     topics: [],
     people: [],
